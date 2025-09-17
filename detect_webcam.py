@@ -5,7 +5,7 @@ import os  # For cross-platform sound support
 from ultralytics import YOLO
 
 # Load the trained YOLO model
-model = YOLO("best.pt")
+model = YOLO(r"C:\Users\sri\Desktop\Ideathon& Hacksphere\Ideathon\Ctrl-alt-win\best.pt")
 
 # Class names from the dataset
 class_names = {
@@ -18,7 +18,7 @@ np.random.seed(42)  # Fix seed for consistent colors
 colors = {i: tuple(np.random.randint(100, 255, 3).tolist()) for i in class_names.keys()}
 
 # Labels that indicate the person is asleep
-asleep_labels = {'asleep', 'Eyeclosed', 'closed'}
+asleep_labels = {'asleep', 'Eyeclosed', 'closed','Face-dropping'}
 
 # Open webcam
 cap = cv2.VideoCapture(0)
