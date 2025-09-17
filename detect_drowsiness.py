@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # Load YOLO model
-model = YOLO("best.pt")  # Ensure the correct path to best.pt
+model = YOLO(r"c:\Users\sri\Desktop\Ideathon& Hacksphere\Ideathon\Ctrl-alt-win\best.pt")  # Using absolute path to model
 
 # Define class names from your dataset
 class_names = {0: "Droopy-eye-lids", 1: "Face-dropping", 2: "Yawning"}
